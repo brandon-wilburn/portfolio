@@ -1,0 +1,131 @@
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: #163541;
+}
+
+video {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+#landing_page {
+	vertical-align: top;
+	height: 95%;
+}
+
+#landing_containter {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.splash_header {
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	font-size: 60px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.splash_text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: #E8E7E7;
+	width: 80%;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+.emphasis {
+	color: #B1FFFF;
+}
+
+.line_style {
+	color: white;
+}
+
+.column_container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.project_container {
+	width: 31%;
+	height: 40%;
+/*	background: grey;*/
+	border-radius: 20px;
+	position: relative;
+	margin-bottom: 40px;
+	overflow: hidden;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+
+.project_container:hover {
+	box-shadow: 0px 0px 30px #B1FFFF;
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.text_container {
+	background: rgba(255,255,255,.75);
+	position: absolute;
+	bottom: 0;
+	padding: 3%;
+}
+
+.project_type {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	font-size: 27px;
+	color: #257174;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.project_title {
+	font-family: 'Staatliches', cursive;
+	font-size: 50px;
+	color: #23272F;
+	margin: 0;
+}
+
+.project_description {
+	font-family: 'Opn Sans', sans-serif;
+	font-size: 20px;
+	color: #23272F;
+	margin: 0;
+	line-height: 30px;
+}
+
+#contact_containter {
+	bottom: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+#contact {
+	display: block;
+	height: 90%;
+	vertical-align: bottom;
+	position: relative;
+}
