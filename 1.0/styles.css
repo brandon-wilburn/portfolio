@@ -17,8 +17,9 @@ video {
 
 img {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
 }
 
 
@@ -68,9 +69,9 @@ img {
 
 .project_container {
 	width: 31%;
-	height: 40%;
+	height: 700px;
 /*	background: grey;*/
-	border-radius: 20px;
+	border-radius: 10px;
 	position: relative;
 	margin-bottom: 40px;
 	overflow: hidden;
@@ -79,17 +80,32 @@ img {
 }
 
 .project_container:hover {
-	box-shadow: 0px 0px 30px #B1FFFF;
+	box-shadow: 0px 0px 15px #B1FFFF;
 	-webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
 
+.project_container:hover .project_title {
+	text-shadow: 0px 0px 1px .5 #B1FFFF;
+}
+
+
 .text_container {
-	background: rgba(255,255,255,.75);
+	background: rgba(255,255,255,.5);
 	position: absolute;
 	bottom: 0;
 	padding: 3%;
+	transition: all 1s ease;
+	opacity: 0;
+	-webkit-transition: .4s ease-in-out opacity;
+    -moz-transition: .4s ease-in-out opacity;
+    -o-transition: .4s ease-in-out opacity;
+    transition: .4s ease-in-out opacity;
+}
+
+.project_container:hover .text_container {
+	opacity: 1;
 }
 
 .project_type {
