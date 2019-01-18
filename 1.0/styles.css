@@ -7,6 +7,7 @@ html {
 body {
 	height: 100%;
 	background-color: #FFFEFA;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #card_video {
@@ -29,11 +30,17 @@ body {
 	height: 95%;
 }
 
-#landing_containter {
+#landing_container {
 	position: absolute;
 	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+	#landing_container {
+		width: 75%;
+	}
 }
 
 a {
@@ -78,7 +85,8 @@ a {
 
 .column_container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
 .project_container {
@@ -102,6 +110,15 @@ a {
     transform: scale(1.02);
 }
 
+@media only screen and (max-width: 768px) {
+	.project_container {
+		border-radius: 0;
+		height: 74vh;
+		width: 87%;
+		margin-bottom: 5%;
+	}
+}
+
 .text_container {
 	background: rgba(255,255,255,.95);
 	position: absolute;
@@ -116,6 +133,12 @@ a {
 
 .project_container:hover .text_container {
 	opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	.text_container {
+		opacity: 1;
+	}
 }
 
 .project_type {
@@ -143,8 +166,8 @@ a {
 	line-height: 30px;
 }
 
-#contact_containter {
-	bottom: 25%;
+#contact_container {
+	bottom: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
@@ -208,14 +231,14 @@ a {
 	height: 70%;
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	margin: 3% 0px 3% 0px;
 }
 
 #splash_mockup_container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
@@ -231,7 +254,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: space-evenly;
 
 }
 
@@ -242,7 +265,7 @@ a {
 }
 
 #sixty_splash {
-	height: 80%;
+	height: 60%;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
@@ -252,9 +275,20 @@ a {
 	align-content: center;
 }
 
+#how_splash {
+	height: 70%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
 .mockup_container > img {
 	width: auto;
 	height: 100%;
+}
+
+#mocukup_container2 {
+
 }
 
 .modalDialog:target {
@@ -309,4 +343,32 @@ a {
 
 .close:hover { 
 	background: #163541; 
+}
+
+.social_button {
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	background: #383838;
+	color: #FFFFFF;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -moz-box-shadow: 0px 0px 5px #000;
+    -webkit-box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #000;
+    will-change: transform;
+    transition: transform ease-in-out .4s;
+}
+
+.social_button:hover {
+	background: #163541;
+	transform: scale(1.06);
+}
+
+#button_container {
+	display: flex;
+	justify-content: space-evenly;
 }
