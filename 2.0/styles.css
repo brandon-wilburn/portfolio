@@ -95,7 +95,7 @@ a {
 }
 
 .project_container {
-	width: 29%;
+	width: 31%;
 	height: 600px;
 /*	background: grey;*/
 	border-radius: 8px;
@@ -267,23 +267,6 @@ a {
 	width: 40%;
 	height: 100%;
 	margin: 2% 0px 2% 0px;
-}
-
-#overflow_iframe {
-	height: 70%;
-	width: 70%;
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0px 0px 4px #171717;
-}
-
-#vapor_iframe {
-	border: none;
-	height: 100%;
-	width: 100%;
 }
 
 #sixty_mockup_container {

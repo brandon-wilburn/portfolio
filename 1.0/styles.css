@@ -47,6 +47,10 @@ a {
 	text-decoration: none;
 }
 
+.emphasis:hover {
+	color: #6DA7C1;
+}
+
 .splash_header {
 	font-family: 'Staatliches', cursive;
 	text-align: center;
@@ -71,17 +75,8 @@ a {
 	color: #257174;
 }
 
-.emphasis:hover {
-	color: #6DA7C1;
-}
-
-.emphasis2 { !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	text-decoration: none;
-	color: #257174;
-}
-
-.emphasis2:hover {
-	color: #6DA7C1;
+.emphasis 2 { !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	color: #B1FFFF;
 }
 
 .line_style {
@@ -95,7 +90,7 @@ a {
 }
 
 .project_container {
-	width: 29%;
+	width: 31%;
 	height: 600px;
 /*	background: grey;*/
 	border-radius: 8px;
@@ -214,7 +209,6 @@ a {
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
-	margin-bottom: 1%;
 }
 
 .modal_video {
@@ -231,26 +225,24 @@ a {
 	display: inline-block;
 	width: 100%;
 	height: 67vh;
-	overflow: hidden;
-	margin-bottom: 1%;
 }
 
 .mockup_container {
+	position: relative;
+	height: 70%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	position: relative;
 }
 
 .mockup_container > img {
-	height: 100%;
 	width: 23%;
 	margin: 3% 0px 3% 0px;
 }
 
 @media only screen and (max-width: 768px) {
 	.mockup_container > img {
-		width: 40%;
+		width: 100%;
 	}
 }
 
@@ -269,23 +261,6 @@ a {
 	margin: 2% 0px 2% 0px;
 }
 
-#overflow_iframe {
-	height: 70%;
-	width: 70%;
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0px 0px 4px #171717;
-}
-
-#vapor_iframe {
-	border: none;
-	height: 100%;
-	width: 100%;
-}
-
 #sixty_mockup_container {
 	display: flex;
 	flex-wrap: wrap;
@@ -301,11 +276,10 @@ a {
 }
 
 #sixty_splash {
-	height: 80%;
+	height: 60%;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
-	margin-bottom: 30px;
 }
 
 .center {
@@ -319,25 +293,13 @@ a {
 	transform: translate(-50%);
 }
 
-#mockup_container2 {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: space-evenly;
-}
-
-#mockup_container2 > img {
-	width: 70%;
+.mockup_container > img {
+	width: auto;
 	height: 100%;
-	margin: 2% 0px 2% 0px;
 }
 
-.splash {
-	height: 70%;
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
-	margin-bottom: 30px;
+#mocukup_container2 {
+
 }
 
 .modalDialog:target {
