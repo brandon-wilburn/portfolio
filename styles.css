@@ -172,10 +172,11 @@ a {
 }
 
 #contact_container {
-	bottom: 40%;
+	bottom: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
+	text-align: center;
 }
 
 #contact {
