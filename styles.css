@@ -130,6 +130,7 @@ a {
 	bottom: 0;
 	padding: 3%;
 	opacity: 0;
+	width: 100%;
 	-webkit-transition: .08s ease opacity;
     -o-transition: .08s ease opacity;
     transition: .08s ease opacity;
@@ -169,6 +170,7 @@ a {
 	color: #23272F;
 	margin: 0;
 	line-height: 30px;
+	width: 90%;
 }
 
 #contact_container {
