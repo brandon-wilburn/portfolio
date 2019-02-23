@@ -416,6 +416,9 @@ a {
 }
 
 #contact_container {
+	width: 30%;
+	min-width: 300px;
+	margin: auto;
 	position: relative;
     top: 45%;
     transform: translateY(-50%);
