@@ -88,6 +88,10 @@ a {
 	color: white;
 }
 
+.project_description ~ #mockup_container2 {
+	text-align: center;
+}
+
 .column_container {
 	display: flex;
 	justify-content: space-evenly;
@@ -130,7 +134,7 @@ a {
 	bottom: 0;
 	padding: 3%;
 	opacity: 0;
-	width: 100%;
+	width: 94%;
 	-webkit-transition: .08s ease opacity;
     -o-transition: .08s ease opacity;
     transition: .08s ease opacity;
@@ -170,22 +174,16 @@ a {
 	color: #23272F;
 	margin: 0;
 	line-height: 30px;
-	width: 90%;
+	width: 100%;
 }
 
-#contact_container {
-	bottom: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	text-align: center;
-}
-
-#contact {
-	display: block;
-	height: 90%;
-	vertical-align: bottom;
-	position: relative;
+.project_descriptionmodal {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #23272F;
+	margin: 0;
+	line-height: 30px;
+	width: 94%;
 }
 
 .modalDialog {
@@ -397,6 +395,8 @@ a {
 	background: #163541; 
 }
 
+/* Contact */
+
 .social_button {
 	font-size: 30px;
 	text-align: center;
@@ -413,6 +413,21 @@ a {
     box-shadow: 0px 0px 5px #000;
     will-change: transform;
     transition: transform ease-in-out .4s;
+}
+
+#contact_container {
+	bottom: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	text-align: center;
+}
+
+#contact {
+	display: block;
+	height: 90%;
+	vertical-align: bottom;
+	position: relative;
 }
 
 .social_button:hover {
