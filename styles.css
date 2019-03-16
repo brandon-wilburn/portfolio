@@ -271,8 +271,8 @@ a {
 }
 
 #overflow_iframe {
-	height: 70%;
-	width: 70%;
+	height: 80vh;
+	width: 80%;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
@@ -281,7 +281,7 @@ a {
 	box-shadow: 0px 0px 4px #171717;
 }
 
-#vapor_iframe {
+.vapor_iframe {
 	border: none;
 	height: 100%;
 	width: 100%;
@@ -439,7 +439,7 @@ a {
 }
 
 #contact_container {
-	width: 243px;;
+	width: 243px;
 	margin: auto;
 	position: relative;
     top: 45%;
