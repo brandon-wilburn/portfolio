@@ -368,7 +368,8 @@ a {
 .modal_guts {
 	height: 100%;
 	width: 100%;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .modal_guts .project_type {
