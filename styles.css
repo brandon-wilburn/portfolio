@@ -37,6 +37,20 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 400px) {
+
+	#landing_container .splash_header {
+		font-size: 24px;
+		text-align: left;
+	}
+
+	#landing_container .splash_text {
+		font-size: 16px;
+		text-align: left;
+		margin: 0;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	#landing_container {
 		width: 75%;
@@ -184,6 +198,22 @@ a {
 	margin: 0;
 	line-height: 30px;
 	width: 94%;
+}
+
+@media only screen and (max-width: 400px) {
+
+	.project_type {
+		font-size: 16px;
+	}
+
+	.project_title {
+		font-size: 24px;
+	}
+
+	.project_description {
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
 
 .modalDialog {
