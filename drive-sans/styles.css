@@ -176,6 +176,12 @@ h1 {
 /*  height: 4000px;*/
 }
 
+@media (max-width: 700px) {
+  #splash {
+     display: none;
+  }
+}
+
 
 .svgContainer:hover {
   /* cursor: pointer; */
