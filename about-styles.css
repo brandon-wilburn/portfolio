@@ -1,0 +1,44 @@
+.diagram {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 776px) {
+    .diagram-info {
+        flex-wrap: wrap;
+        /* align-items: center;
+        justify-content: center; */
+        height: 90%;
+        position: relative;
+    }
+
+    /* .infoBoxSS {
+        height: 100%;
+    } */
+
+    .infoBox h1 {
+        margin-top: 45%;
+        position: relative;
+        width: 60%;
+    }
+
+    .infoBoxSS {
+        width: 100%;
+        height: 100%;
+        flex-direction: unset;
+        justify-content: unset;
+        /* height: initial; */
+    }
+
+    .diagram {
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        margin: 0;
+        bottom: 0px;
+    }
+
+    .diagram img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

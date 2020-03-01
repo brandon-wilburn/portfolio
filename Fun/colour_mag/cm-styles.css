@@ -1,0 +1,16 @@
+iframe {
+    height: 90%;
+    width: 100%;
+    position: static;
+}
+
+#exSP {
+	height: 5vh;
+}
+
+@media screen and (max-width: 776px) {
+
+    .right.pnb {
+        display: none;
+    }
+}

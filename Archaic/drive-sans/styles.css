@@ -1,0 +1,194 @@
+body {
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  /* cursor: crosshair; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.anim {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+/*  filter: drop-shadow(0px 0px 5px rgba(200,200,200,0.1));*/
+}
+
+.svgContainer {
+  height: 300px;
+  width: 300px;
+}
+
+g {
+  display: block;
+}
+
+.anim path {
+  fill: none;
+  stroke-miterlimit: 10;
+  /*stroke-width: 1px;*/
+  stroke-linecap: round;
+  position: relative;
+  mix-blend-mode: screen;
+  will-change: stroke-width;
+  transition: stroke-width .3s ease-in-out;
+}
+
+#scroller {
+  bottom:0;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  overflow:auto;
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+#grain {
+  height: 300%;
+  width: 300%;
+  transform: translate(-50%, -50%);
+/*  background-color: blue;*/
+  background-image: url('assets/paper_2.png');
+  opacity: 0.09;
+  animation: grainy 15s steps(10) infinite;
+  /* mix-blend-mode: screen; */
+  /* overflow: hidden; */
+}
+
+#grainContain {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes grainy {
+  0%, 100% { transform:translate(-50%, -50%) }
+  10% { transform:translate(-52%, -49%) }
+  20% { transform:translate(-55%, -40%) }
+  30% { transform:translate(-50%, -45%) }
+  40% { transform:translate(-45%, -50%) }
+  50% { transform:translate(-50%, -55%) }
+  60% { transform:translate(-55%, -50%) }
+  70% { transform:translate(-50%, -45%) }
+  80% { transform:translate(-45%, -50%) }
+  90% { transform:translate(-60%, -55%) }
+}
+
+/*#grain:after {
+  content: "";
+  height: 300%;
+  width: 300%;
+  top: -100%;
+  left: -50%;
+  opacity: 0.3;
+  background-color: yellow;
+}*/
+
+@media (min-width: 700px) {
+  #scroller {
+     scroll-snap-type: y mandatory;
+  }
+}
+
+section {
+  width: 100vw;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+#splash {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+/*  background-color: green;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#splashContainer {
+  height: 600px;
+  width: 600px;
+  /* background-color: green; */
+}
+
+#splashContainer path, #scrollDown path {
+  fill: none;
+  stroke-miterlimit: 10;
+  /*stroke-width: 1px;*/
+  stroke-linecap: round;
+  position: relative;
+  mix-blend-mode: screen;
+  will-change: stroke-width;
+  transition: stroke-width .3s ease-in-out;
+}
+
+#splashText {
+  fill: #e2d6bf !important;
+  stroke: none;
+}
+
+#scrollDown {
+  position: absolute;
+  bottom: 60px;
+  width: 89.07px;
+  height: 81.48px;
+  animation: bounce 1.5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  20%  { transform: translateY(-10px); }
+  30%  { transform: translateY(0); }
+  40%  { transform: translateY(-3px); }
+  50%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+
+#glyphs {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding-top: 10%;
+  padding-bottom: 10%;
+/*  height: 100%;*/
+  box-sizing: border-box;
+/*  height: 4000px;*/
+}
+
+@media (max-width: 700px) {
+  #splash {
+     display: none;
+  }
+}
+
+
+.svgContainer:hover {
+  /* cursor: pointer; */
+}
+
+
+
+
+
+

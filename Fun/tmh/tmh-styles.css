@@ -1,0 +1,25 @@
+.page p {
+    line-height: 25px;
+}
+
+#exSP {
+	height: 5vh;
+}
+
+.projTitle {
+    color: #100F12 !important;
+}
+
+/* .description p {
+    color: #100F12 !important;
+} */
+
+@media screen and (max-width: 776px) {
+    .page {
+        height: auto !important;
+    }
+
+    .left.pnb {
+        display: none;
+    }
+}

@@ -1,0 +1,173 @@
+.infoBoxActiveContainer {
+    height: 90%;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 776px) {
+    .infoBoxActiveContainer {
+        flex-direction: column;
+    }
+}
+
+.infoBox {
+    width: 100%;
+}
+
+.ring-material {
+    height: 32px;
+    width: 250px;
+    border-radius: 16px;
+    /* background-color: yellow; */
+}
+
+.infoBoxActive {
+    flex-direction: column;
+    justify-items: center;
+    /* width: 350px; */
+}
+
+.infoBoxActive p {
+    margin: 0px 0px 10px 0px;
+    width: auto;
+}
+
+.infoBoxActive * {
+    margin-bottom: 20px;
+}
+
+.infoBoxActive:last-child {
+    margin-bottom: 0;
+}
+
+.infoBoxSS {
+    height: 75%;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.diagram-info p {
+    width: 100%;
+}
+
+.diagram-info {
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagram {
+    height: 75%;
+    width: 50%;
+    /* width: 10px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+.diagram img {
+    height: 100%;
+    /* width: auto; */
+}
+
+.explains {
+    height: 75%;
+    width: 50%;
+    position: relative;
+}
+
+.explains img {
+    height: 100%;
+}
+
+.imgcropper {
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    width: 250px;
+    border-radius: 20px;
+    transition: background-color .2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #758CE5;
+    cursor: pointer;
+}
+
+#ring {
+    mix-blend-mode: multiply;
+}
+
+.static {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+iframe {
+    height: 90%;
+    width: 100%;
+    position: static;
+}
+
+.wood {
+    background-image: url(texture-icon-09.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.metal {
+    background-image: url(texture-icon-10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.silicone-text {
+    background-image: url(texture-icon-11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 776px) {
+    .diagram-info {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .infoBoxSS {
+        width: 100%;
+        height: auto;
+    }
+
+    .diagram {
+        width: 75%;
+        margin: 20px 0px;
+    }
+
+    .diagram img {
+        width: 100%;
+    }
+}
+

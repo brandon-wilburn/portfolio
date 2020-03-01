@@ -1,0 +1,70 @@
+.info {
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoBoxSS {
+    height: 75%;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-lower-text > .infoBox {
+    width: 100%;
+}
+
+.infoBox p {
+    margin-top: none;
+}
+
+.explains {
+    height: 75%;
+    width: 50%;
+    /* width: 10px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.explains img {
+    height: 100%;
+    /* width: auto; */
+}
+
+#exSP {
+	height: 5vh;
+}
+
+.page img {
+    margin: 0;
+    height: 100%;
+}
+
+.info p {
+    width: 100%;
+}
+
+@media screen and (max-width: 776px) {
+    .info {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .infoBoxSS {
+        width: 100%;
+        height: auto;
+    }
+
+    .explains {
+        width: 75%;
+        margin: 20px 0px;
+    }
+
+    .explains img {
+        width: 100%;
+    }
+}
