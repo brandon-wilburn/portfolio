@@ -157,7 +157,7 @@ body {
 	width: 180px;
     background-color: rgba(16, 15, 18, .75);
     z-index: 99999;
-    padding: 40px 20px 20px 20px;
+    padding: 80px 20px 20px 20px;
     display: none;
     flex-direction: column;
     box-sizing: border-box;
@@ -166,13 +166,13 @@ body {
 .slide_menu i {
     position: absolute;
     right: 20px;
-    top: 40px;
-    font-size: 18px;
+    top: 6px;
+    font-size: 32px;
 }
 
 .slide_menu a{
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 24px;
     color: inherit;
     text-decoration: none;
 }
@@ -186,7 +186,7 @@ body {
 #links_slide a .icon_filter {
     margin-left: 0px;
     margin-right: 10px;
-    height: 18px;
+    height: 24px;
     width: auto;
 }
 
@@ -243,8 +243,8 @@ a {
 
 .icon_filter {
 	filter: invert(100%);
-	height: 16px;
-	width: 16px;
+	height: 24px;
+	width: auto;
 	margin-left: 20px;
 }
 
@@ -402,7 +402,7 @@ iframe {
     .nav_container {
         padding: 0 20px 0px 20px;
         background-color: rgba(16, 15, 18, 1);
-      }
+    }
       
     .tmh {
         background-image: url(tmh/mobile-splash.jpg);

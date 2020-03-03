@@ -1,10 +1,18 @@
 .page p {
     line-height: 25px;
+    width: 50vh;
+}
+
+.page {
+    align-items: center;
+    justify-content: center;
 }
 
 #exSP {
 	height: 5vh;
 }
+
+
 
 .projTitle {
     color: #100F12 !important;
