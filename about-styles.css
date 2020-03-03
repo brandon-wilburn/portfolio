@@ -2,6 +2,10 @@
     overflow: hidden;
 }
 
+.infoBox h1 {
+    width: 90%;
+}
+
 @media screen and (max-width: 776px) {
     .diagram-info {
         flex-wrap: wrap;
