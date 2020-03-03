@@ -70,5 +70,6 @@
 
     .explains img {
         width: 100%;
+        position: unset;
     }
 }
