@@ -160,11 +160,9 @@
         margin: 0;
     }
 
-    #inner_wrapper {
-        /* transform: rotate(90deg) translateY(-100vh); */
+    /* #inner_wrapper {
         transform-origin: top left;
         height: 100%;
-        /* width: 2260px; */
         width: calc((250px * 3) + 90px);
         display: flex;
         justify-content: space-between;
@@ -173,7 +171,6 @@
         align-items: center;
         padding-left: 20px;
         padding-right: 20px;
-        /* padding-bottom: 50px; */
     }
 
     .block.one {
@@ -181,11 +178,10 @@
     }
 
     .block {
-        /* width: 500px; */
         width: 250px;
         height: calc(100% - 100px);
         box-sizing: border-box;
         padding: 20px;
         position: relative;
-    }
+    } */
 }

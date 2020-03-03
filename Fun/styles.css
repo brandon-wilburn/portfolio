@@ -56,6 +56,7 @@ body {
     height: 100%;
     /* width: 2260px; */
     width: calc((33vw * 4) - 120px);
+    /* min-width: calc((350px * 4) - 120px); */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -78,6 +79,7 @@ body {
 .block {
     /* width: 500px; */
     width: calc(33vw - 100px);
+    min-width: 350px;
     height: calc(100% - 100px);
     box-sizing: border-box;
     padding: 20px;
@@ -399,6 +401,39 @@ iframe {
 }
 
 @media screen and (max-width: 776px) {
+    #inner_wrapper {
+        min-width: unset;
+    }
+
+    .block {
+        min-width: 300px;
+    }
+
+    #inner_wrapper {
+        transform-origin: top left;
+        height: 100%;
+        width: calc((300px * 3) + 90px);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .block.one {
+        display: none;
+    }
+
+    .block {
+        width: 250px;
+        height: calc(100% - 100px);
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+    }
+
     .nav_container {
         padding: 0 20px 0px 20px;
         background-color: rgba(16, 15, 18, 1);
@@ -407,5 +442,14 @@ iframe {
     .tmh {
         background-image: url(tmh/mobile-splash.jpg);
         background-position: right;
+    }
+}
+
+
+@media screen and (max-width: 1370px) {
+    #inner_wrapper {
+        box-sizing: unset;
+        min-width: calc((350px * 4) + 120px);
+        width: unset;
     }
 }
