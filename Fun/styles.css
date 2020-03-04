@@ -234,13 +234,17 @@ a {
 	white-space: nowrap;
 }
 
-#footer_wrapper * {
+#footer_wrapper a {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #links {
 	display: flex;
 	align-items: center;
-	justify-items: center;
+    justify-items: center;
+    height: 100%;
 }
 
 .icon_filter {
